@@ -1,0 +1,69 @@
+*
+{
+	margin:0px;
+	padding:0px;
+	font-family:Helvetica, Arial, sans-serif;
+}
+
+canvas#drawingArea
+{
+	position:fixed;
+	top:0px;
+	left:0px;
+}
+
+div#info
+{
+	position:fixed;
+	bottom:0px;
+	left:0px;
+	width:100%;
+	height:20px;
+	background-color:#111;
+}
+
+div#info>div
+{
+	color:white;
+	font-size: small;
+	padding:2px;
+}
+
+div#info>div>a
+{
+	color:yellow
+}
+
+div#pp
+{
+	position:fixed;
+	bottom:30px;
+	left:10px;
+	width:50px;
+	text-align:center;
+	background-color:#111;
+	color:white;
+	font-size: small;
+	padding:5px;
+	border-radius:5px;
+	cursor:pointer;
+}
+
+input#tail
+{
+	position:fixed;
+	bottom:30px;
+	left:80px;
+	width:200px;
+}
+
+div#help
+{
+	position:fixed;
+	font-size:x-large;
+	top:50%;
+	left:50%;
+	width:500px;
+	transform:translateX(-250px);
+	
+}

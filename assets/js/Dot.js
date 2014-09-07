@@ -31,7 +31,8 @@ Dot.prototype.getPoint2D = function()
 
 
 
-Dot.prototype.isIncludeXY = function(x,y)
+Dot.prototype.isIncludeXY = function(x,y,r)
 {
-	return this.getPoint2D().distanceToXY(x,y) <= Main.DotsRadius;
+	r = r==undefined ? 1 : r
+	return this.getPoint2D().distanceToXY(x,y) <= (Main.DotsRadius*r);
 };//eof

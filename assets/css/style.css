@@ -4,6 +4,13 @@
 	padding:0px;
 	font-family:Helvetica, Arial, sans-serif;
 }
+a
+{
+	text-decoration:none;
+	color:yellow;
+	transition:color 0.5s;
+}
+a:hover{color:red;}
 
 canvas#drawingArea
 {
@@ -21,17 +28,19 @@ div#info
 	height:20px;
 	background-color:#111;
 }
-
 div#info>div
 {
-	color:white;
-	font-size: small;
 	padding:2px;
+	font-size:small;
+	color:white;
 }
-
-div#info>div>a
+div#info>div.titlebar
 {
-	color:yellow
+	float:left;
+}
+div#info>div.contact
+{
+	float:right;
 }
 
 div#pp
@@ -65,5 +74,9 @@ div#help
 	left:50%;
 	width:500px;
 	transform:translateX(-250px);
-	
+	text-align:center;
+}
+div#help>a
+{
+	color:blue;
 }

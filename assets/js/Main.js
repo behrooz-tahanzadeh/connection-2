@@ -60,6 +60,15 @@ Main =
 					return;
 				}
 			}
+			
+			for(var i=0; i<Main.Dots.length; ++i)
+			{
+				if(Main.Dots[i].isIncludeXY(e.pageX,e.pageY,3))
+				{
+					Main.dragDotIndex = i;
+					return;
+				}
+			}
 		}
 	},
 	
